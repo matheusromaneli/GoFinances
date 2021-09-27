@@ -3,11 +3,13 @@ import React from 'react';
 import { 
 	Container,
 	Header, 
-	UserWrapper, 
+	UserWrapper,
+	UserContent, 
 	UserImage, 
 	UserGrettings, 
 	Grettings, 
-	UserName 
+	UserName,
+	Icon 
 } from './styles';
 
 export function Dashboard(){
@@ -15,11 +17,14 @@ export function Dashboard(){
 		<Container>
 			<Header>
 				<UserWrapper>
-					<UserImage source={{uri: 'https://avatars.githubusercontent.com/u/78664028?v=4'}} />
-					<UserGrettings>
-						<Grettings>Olá,</Grettings>
-						<UserName>Matheus</UserName>
-					</UserGrettings>
+					<UserContent>
+						<UserImage source={{uri: 'https://avatars.githubusercontent.com/u/78664028?v=4'}} />
+						<UserGrettings>
+							<Grettings>Olá,</Grettings>
+							<UserName>Matheus</UserName>
+						</UserGrettings>
+					</UserContent>
+					<Icon name= 'power'/>
 				</UserWrapper>
 			</Header>
 		</Container>
