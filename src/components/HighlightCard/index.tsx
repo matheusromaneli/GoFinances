@@ -32,7 +32,7 @@ export function HighlightCard({title, amount, lastTransaction, type}:HighlightCa
 			</Header>
 			<Content>
 				<Amount type = {type}>{amount}</Amount>
-				<LastTransaction type = {type}>Ultima em {lastTransaction}</LastTransaction>
+				<LastTransaction type = {type}>{lastTransaction}</LastTransaction>
 			</Content>
 		</Container>
 	)

@@ -11,7 +11,9 @@ import {
 	Grettings, 
 	UserName,
 	Icon,
-	Cards
+	Cards,
+	Transactions,
+	Title
 } from './styles';
 
 export function Dashboard(){
@@ -33,22 +35,25 @@ export function Dashboard(){
 				<HighlightCard 
 					title = 'Entradas'
 					amount={`R$ ${12345.32}`} 
-					lastTransaction={`${13} de ${'abril'}`}
+					lastTransaction={`Última entrada dia ${13} de ${'abril'}`}
 					type = 'up'
 				/>
 				<HighlightCard 
 					title = 'Saídas'
 					amount={`R$ ${1259.21}`} 
-					lastTransaction={`${3} de ${'abril'}`}
+					lastTransaction={`Última saída dia ${3} de ${'abril'}`}
 					type = 'down'
 				/>
 				<HighlightCard 
 					title = 'Total'
 					amount={`R$ ${12345.00}`} 
-					lastTransaction={`${1} a ${13} de ${'abril'}`}
+					lastTransaction={`${1} à ${13} de ${'abril'}`}
 					type = 'total'
 				/>
 			</Cards>
+			<Transactions>
+				<Title>Listagem</Title>
+			</Transactions>
 		</Container>
 	)
 }

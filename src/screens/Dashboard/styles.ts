@@ -67,3 +67,14 @@ export const Cards = styled.ScrollView.attrs({
     position: absolute;
     margin-top: ${RFPercentage(20)}px;
 `;
+
+export const Transactions = styled.View`
+    margin: 0 24px;
+    margin-top: ${RFValue(60)}px;
+`;
+
+export const Title = styled.Text`
+    font-size: ${RFValue(18)}px;
+    font-family: ${({theme}) => theme.fonts.regular};
+    color: ${({theme}) => theme.colors.text_dark};
+`;

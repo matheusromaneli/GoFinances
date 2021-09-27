@@ -8,7 +8,6 @@ interface TypeProps{
 
 export const Container = styled.View<TypeProps>`
     width: ${RFValue(300)}px;
-    height: fit-content;
     padding: 19px 24px;
     padding-bottom: 42px;
     border-radius: 5px;
