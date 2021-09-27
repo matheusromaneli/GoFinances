@@ -2,8 +2,8 @@ export default {
     colors: {
         primary: '#0066cc',
 
-        secundary: '#222222',
-        secundary_light: 'rgba(34,34,34,0.3)',
+        secundary: '#FF872C',
+        secundary_light: 'rgba(100,53,17,0.3)',
 
         success: '#12A454',
         success_light: 'rgba(18, 164, 84, 0.5)',
@@ -14,6 +14,7 @@ export default {
         shape: '#FFF',
         title: '#363F5F',
         text: '#969CB2',
+        text_dark: '#000000',
         background: '#F0F2F5'
     },
     fonts:{
