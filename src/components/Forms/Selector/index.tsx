@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 import {
     Category,
@@ -7,17 +7,17 @@ import {
 } from './styles';
 
 interface Props{
-    title: string;
+    placeholder:string;
     data: string[];
+    onSelect: (content:string) => void;
 }
 
-export function Selector({title, data}: Props){
-    const [content, setContent] = useState(title);
+export function Selector({placeholder, data, onSelect}: Props){
     return(
         <Container
             data = {data}
-            defaultButtonText={ content }
-            onSelect={(item,index) => {() => setContent(item)}}
+            defaultButtonText={ placeholder }
+            onSelect={(item,index) => {onSelect(item)}}
             buttonTextAfterSelection={(selectedItem, index) => {return selectedItem}}
             rowTextForSelection={(item, index) => {return item}}
             renderCustomizedRowChild = {(selectedItem, index) => {return <Category>{ selectedItem }</Category>}}
