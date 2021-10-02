@@ -13,19 +13,19 @@ interface ContainerProps{
 }
 
 export const Container = styled(TouchableOpacity)<ContainerProps>`
-    border-width: ${({isActive}) => isActive? 0 : 1.5}px;
-    background-color: ${({theme, isActive, type}) => 
-        isActive? 
-            type === 'up'? 
-                theme.colors.success_light 
-            : 
-                theme.colors.attention_light 
-        : 
-            theme.colors.background};
-    padding: 18px 0px;
     width: 48%;
+    padding: 18px 0px;
     justify-content: center;
     flex-direction: row;
+    background-color: ${({theme, isActive, type}) => 
+        isActive? 
+        type === 'up'? 
+                theme.colors.success_light 
+                : 
+                theme.colors.attention_light 
+            : 
+            theme.colors.background};
+    border-width: ${({isActive}) => isActive? 0 : 1.5}px;
     border-radius: 5px;
     border-color: ${({ theme }) => theme.colors.text};
 `;

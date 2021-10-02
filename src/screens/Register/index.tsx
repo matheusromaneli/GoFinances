@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { Button } from '../../components/Forms/Button';
 import { Input } from '../../components/Forms/Input';
+import { Selector } from '../../components/Forms/Selector';
 import { TransactionTypeButton } from '../../components/Forms/TransactionTypeButton';
 import { 
     Container,
@@ -43,6 +44,7 @@ export function Register(){
                             onPress = {() => handleTransactionCardSelected('down')}
                         />
                     </TypeField>
+                    <Selector title = "Categoria" data={["Casa", "Carro", "Alimentação", "Venda"]}/>
                 </Fields>
                 <Button title = "Enviar"/>
             </Form>
